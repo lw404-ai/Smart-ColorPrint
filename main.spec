@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['main_qt.py'],
+    ['main.py'],
     pathex=[],
     binaries=[],
     datas=[('poppler', 'poppler')],
@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='main_qt',
+    name='main',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
